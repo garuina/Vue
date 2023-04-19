@@ -1,23 +1,17 @@
 <template>
- <h3>Ch08.Vuetify 실습</h3>
- <p>
+  <h3>Ch08.Vuetify 실습</h3>
+  <p>
     <router-link to="/components">Components</router-link> /
     <router-link to="/grids">Grids</router-link> /
     <router-link to="/layout">Layout</router-link> /
- </p>
-
- <Components></Components>
- <Grids></Grids>
+  </p>
+  <hr />
+  <router-view></router-view>
 </template>
 
-<script setup>
-import Components from './components/sub1/Components.vue';
-import Grids from './components/sub2/Grids.vue';
-
-</script>
-
-<style scoped>
-#app{
+<script setup></script>
+<style>
+#app {
   padding: 10px;
 }
 </style>
